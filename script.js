@@ -129,13 +129,27 @@ const generateQuotes = function (Name, Surname, Service, Hours, subtotal, travel
     }
 }
 
-console.log(`${generateQuotes(clients[0].Name,
-    clients[0].Surname,
-    clients[0].Service,
-    clients[0].Hours,
-    generateSubtotal(clients[0].Service, clients[0].Hours),
-    determineTravelFee(clients[0].travelRequired),
-    determineDiscount(generateSubtotal(clients[0].Service, clients[0].Hours)),
-    determineFinalTotal(generateSubtotal(clients[0].Service, clients[0].Hours), determineTravelFee(clients[0].travelRequired), determineDiscount(generateSubtotal(clients[0].Service, clients[0].Hours)))
-)}`)
+const photographyBookings = function () {
+    for (let i = 0; i <= clients.length - 1; i++) {
+
+    }
+}
+
+const businessReport = function () {
+    console.log("Daily Business Report");
+    console.log(`Total Clients: ${clients.length}`);
+
+};
+
+businessReport();
+
+// console.log(`${generateQuotes(clients[0].Name,
+//     clients[0].Surname,
+//     clients[0].Service,
+//     clients[0].Hours,
+//     generateSubtotal(clients[0].Service, clients[0].Hours),
+//     determineTravelFee(clients[0].travelRequired),
+//     determineDiscount(generateSubtotal(clients[0].Service, clients[0].Hours)),
+//     determineFinalTotal(generateSubtotal(clients[0].Service, clients[0].Hours), determineTravelFee(clients[0].travelRequired), determineDiscount(generateSubtotal(clients[0].Service, clients[0].Hours)))
+// )}`)
 
