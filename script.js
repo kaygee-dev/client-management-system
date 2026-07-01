@@ -1,7 +1,3 @@
-//Pricing Rules 
-// Videography : R500/hour
-// Photography : R800/hour
-// Both : R1200/hour
 const clients = [
     clientOne = {
         Name: "Joe",
@@ -129,16 +125,80 @@ const generateQuotes = function (Name, Surname, Service, Hours, subtotal, travel
     }
 }
 
-const photographyBookings = function () {
-    for (let i = 0; i <= clients.length - 1; i++) {
+let photographyCounter = 0;
+let videographyCounter = 0;
+let bothCounter = 0;
 
+const serviceCounter = function () {
+    for (let i = 0; i <= clients.length - 1; i++) {
+        if (clients[i].Service === "Photography") {
+            photographyCounter = photographyCounter + 1
+        } else if (clients[i].Service === "Videography") {
+            videographyCounter = videographyCounter + 1
+        } else if (clients[i].Service === "Both") {
+            bothCounter = bothCounter + 1
+        }
     }
 }
 
-const businessReport = function () {
-    console.log("Daily Business Report");
-    console.log(`Total Clients: ${clients.length}`);
+serviceCounter();
 
+let total = 0;
+const revenueCounter = function () {
+    for (let i = 0; i <= clients.length - 1; i++) {
+        total = total + generateSubtotal(clients[i].Service, clients[i].Hours)
+    }
+    return total;
+}
+
+let highest = 0;
+
+const determineHighestQuote = function () {
+    for (let i = 0; i <= clients.length - 1; i++) {
+        const subtotal = generateSubtotal(clients[i].Service, clients[i].Hours);
+        const travel = determineTravelFee(clients[i].travelRequired);
+        const discount = determineDiscount(subtotal);
+        const finalTotal = determineFinalTotal(subtotal, travel, discount);
+        if (finalTotal > highest) {
+            highest = finalTotal;
+        }
+    }
+    return highest;
+};
+
+let lowest = Infinity;
+
+const determineLowestQuote = function () {
+    for (let i = 0; i <= clients.length - 1; i++) {
+        const subtotal = generateSubtotal(clients[i].Service, clients[i].Hours);
+        const travel = determineTravelFee(clients[i].travelRequired);
+        const discount = determineDiscount(subtotal);
+        const finalTotal = determineFinalTotal(subtotal, travel, discount);
+        if (finalTotal < lowest) {
+            lowest = finalTotal;
+        }
+    }
+    return lowest;
+};
+
+const determineAverageQuote = function () {
+    const totalTwo = revenueCounter();
+    const average = totalTwo / clients.length;
+    return average;
+}
+
+const businessReport = function () {
+    console.log("======================");
+    console.log("Daily Business Report");
+    console.log("======================");
+    console.log(`Total Clients: ${clients.length}`);
+    console.log(`Photography Bookings: ${photographyCounter}`);
+    console.log(`Videography Bookings: ${videographyCounter}`);
+    console.log(`Both Bookings: ${bothCounter}`);
+    console.log(`Revenue: ${revenueCounter()}`);
+    console.log(`Highest Quote: ${determineHighestQuote()}`);
+    console.log(`Lowest Quote: ${determineLowestQuote()}`);
+    console.log(`Average Quote: ${determineAverageQuote()}`);
 };
 
 businessReport();
