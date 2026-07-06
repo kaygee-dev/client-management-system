@@ -1,14 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="header">
+      <h2>R4MZ MEDIA</h2>
+      <h6>Client Management System</h6>
+    </div>
+    <div class="leftBox">
+      <h3>BUSINESS OVERVIEW</h3>
+      <div class="leftBoxItems">
+        <div class="icon">
+          <img src="multiple-users-silhouette.png" alt="Icon" />
+        </div>
+        <h5>TOTAL CLIENTS</h5>
+        <h2>8</h2>
+      </div>
+      <div class="leftBoxItems">
+        <div class="icon">
+          <img src="photo-camera-interface-symbol-for-button.png" alt="Icon" />
+        </div>
+        <h5>PHOTOGRAPHY BOOKINGS</h5>
+        <h2>3</h2>
+      </div>
+      <div class="leftBoxItems">
+        <div class="icon">
+          <img src="video-camera.png" alt="Icon" />
+        </div>
+        <h5>VIDEOGRAPHY BOOKINGS</h5>
+        <h2>2</h2>
+      </div>
+      <div class="leftBoxItems">
+        <div class="icon">
+          <img src="layer.png" alt="Icon" />
+        </div>
+        <h5>BOTH BOOKINGS</h5>
+        <h2>3</h2>
+      </div>
+      <div class="leftBoxItems">
+        <div class="icon">
+          <img src="coin.png" alt="Icon" />
+        </div>
+        <h5>TOTAL REVENUE</h5>
+        <h2>R27,650</h2>
+      </div>
+      <div class="leftBoxItems">
+        <div class="icon">
+          <img src="increase.png" alt="Icon" />
+        </div>
+        <h5>HIGHEST QUOTE</h5>
+        <h2>R6,730</h2>
+      </div>
+      <div class="leftBoxItems">
+        <div class="icon">
+          <img src="downtrend.png" alt="Icon" />
+        </div>
+        <h5>LOWEST QUOTE</h5>
+        <h2>R1,600</h2>
+      </div>
+      <div class="leftBoxItems">
+        <div class="icon">
+          <img src="bar-graph.png" alt="Icon" />
+        </div>
+        <h5>AVERAGE QUOTE</h5>
+        <h2>R3,456</h2>
+      </div>
+    </div>
+    <div class="rightBox">
+      <div class="clients-header">
+        <h3>CLIENTS</h3>
+        <button class="addBtn">ADD CLIENTS</button>
+      </div>
+      <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-0lax">#</th>
+            <th class="tg-0pky">CLIENT NAME</th>
+            <th class="tg-0pky">SERVICE</th>
+            <th class="tg-0pky">HOURS</th>
+            <th class="tg-0pky">TRAVEL</th>
+            <th class="tg-0pky">SUBTOTAL</th>
+            <th class="tg-0pky">DISCOUNT</th>
+            <th class="tg-0pky">FINAL TOTAL</th>
+            <th class="tg-0pky">ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0lax">1</td>
+            <td class="tg-0lax">JOE DLAMINI</td>
+            <td class="tg-0lax">PHOTOGRAPHY</td>
+            <td class="tg-0lax">4</td>
+            <td class="tg-0lax">YES</td>
+            <td class="tg-0lax">R2000</td>
+            <td class="tg-0lax">R0</td>
+            <td class="tg-0lax">R2250</td>
+            <td class="tg-0lax"><button>View Quote</button></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">2</td>
+            <td class="tg-0lax">MPHO NKOSI</td>
+            <td class="tg-0lax">VIDEOGRAPHY</td>
+            <td class="tg-0lax">2</td>
+            <td class="tg-0lax">NO</td>
+            <td class="tg-0lax">R1600</td>
+            <td class="tg-0lax">R0</td>
+            <td class="tg-0lax">R1600</td>
+            <td class="tg-0lax"><button>View Quote</button></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">3</td>
+            <td class="tg-0lax">OFENTSE MOLEFE</td>
+            <td class="tg-0lax">BOTH</td>
+            <td class="tg-0lax">6</td>
+            <td class="tg-0lax">YES</td>
+            <td class="tg-0lax">R7200</td>
+            <td class="tg-0lax">R720</td>
+            <td class="tg-0lax">R6730</td>
+            <td class="tg-0lax"><button>View Quote</button></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">4</td>
+            <td class="tg-0lax">MUSA KHUMALO</td>
+            <td class="tg-0lax">PHOTOGRAPHY</td>
+            <td class="tg-0lax">3</td>
+            <td class="tg-0lax">NO</td>
+            <td class="tg-0lax">R1500</td>
+            <td class="tg-0lax">R0</td>
+            <td class="tg-0lax">R1500</td>
+            <td class="tg-0lax"><button>View Quote</button></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">5</td>
+            <td class="tg-0lax">KAYBEE MOKOENA</td>
+            <td class="tg-0lax">BOTH</td>
+            <td class="tg-0lax">5</td>
+            <td class="tg-0lax">YES</td>
+            <td class="tg-0lax">R6000</td>
+            <td class="tg-0lax">R600</td>
+            <td class="tg-0lax">R5650</td>
+            <td class="tg-0lax"><button>View Quote</button></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">6</td>
+            <td class="tg-0lax">NEO MASEKO</td>
+            <td class="tg-0lax">VIDEOGRAPHY</td>
+            <td class="tg-0lax">8</td>
+            <td class="tg-0lax">NO</td>
+            <td class="tg-0lax">R6400</td>
+            <td class="tg-0lax">R640</td>
+            <td class="tg-0lax">R5760</td>
+            <td class="tg-0lax"><button>View Quote</button></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">7</td>
+            <td class="tg-0lax">LERATO MTHEMBU</td>
+            <td class="tg-0lax">PHOTOGRAPHY</td>
+            <td class="tg-0lax">7</td>
+            <td class="tg-0lax">YES</td>
+            <td class="tg-0lax">R3500</td>
+            <td class="tg-0lax">R350</td>
+            <td class="tg-0lax">R3400</td>
+            <td class="tg-0lax"><button>View Quote</button></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">8</td>
+            <td class="tg-0lax">KABELO SITHOLE</td>
+            <td class="tg-0lax">BOTH</td>
+            <td class="tg-0lax">4</td>
+            <td class="tg-0lax">NO</td>
+            <td class="tg-0lax">R4800</td>
+            <td class="tg-0lax">R480</td>
+            <td class="tg-0lax">R4320</td>
+            <td class="tg-0lax"><button>View Quote</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="lowerSec">
+        <div class="qbox">
+          <h3>QUICK ACTIONS</h3>
+          <button>GENERATE ALL QUOTES</button> <br />
+          <button>GENERATE BUSINESS REPORT</button> <br />
+          <button>REFRESH DATA</button>
+        </div>
+        <div class="bBox">
+          <h3>BUSINESS REPORT</h3>
+          <div class="bBoxInfo">
+            <h4 class="hed1">
+              Click <strong>"Generate Business Report"</strong> <br />
+              to view the daily business report.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

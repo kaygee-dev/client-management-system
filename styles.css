@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f172a;
+}
+
+.header {
+  border-bottom: 2px rgb(0, 42, 156) solid;
+  margin-top: -20px;
+  padding-left: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-bottom: 1px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+.header h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -20px;
+}
+
+.leftBox {
+  border: 1px rgb(0, 42, 156) solid;
+  margin-top: 20px;
+  width: 450px;
+  background-color: #1e293b;
+  color: white;
+}
+
+.leftBox h3 {
+  margin-left: 10px;
+}
+
+.leftBoxItems {
+  width: 424px;
+  height: 80px;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  background-color: #334155;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.icon {
+  background-color: #3f4c5e;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.leftBoxItems h5 {
+  text-align: left;
+  margin-top: -55px;
+  margin-left: 100px;
+}
+
+.leftBoxItems h2 {
+  text-align: left;
+  margin-top: -10px;
+  margin-left: 100px;
+}
+
+.icon img {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.rightBox {
+  width: 1410px;
+  background-color: #1e293b;
+  height: 1020px;
+  align-items: end;
+  border: 1px rgb(0, 42, 156) solid;
+  margin-left: 470px;
+  margin-top: -1021px;
+  color: white;
+}
+
+.rightBox h3 {
+  margin-left: 10px;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-color: rgb(0, 42, 156);
+  border-spacing: 0;
+  margin-left: 10px;
+  width: 1387px;
+}
+.tg td {
+  background-color: #334155;
+  border-color: rgb(0, 42, 156);
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  background-color: #334155;
+  border-color: rgb(0, 42, 156);
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-0pky {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+
+td button {
+  background-color: #3b82f6;
+  border: 0;
+  color: white;
+  width: 200px;
+  margin-right: -80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.clients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addBtn {
+  margin-right: 13px;
+  background-color: #3b82f6;
+  color: white;
+  border: 0;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.qbox {
+  width: 450px;
+  background-color: #334155;
+  margin-left: 10px;
+  border: 1px rgb(0, 42, 156) solid;
+  margin-top: 20px;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.qbox button {
+  width: 430px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: #3b82f6;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+}
+
+.lowerSec {
+  display: flex;
+}
+
+.bBox {
+  width: 922px;
+  background-color: #334155;
+  margin-left: 10px;
+  border: 1px rgb(0, 42, 156) solid;
+  margin-top: 20px;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.bBoxInfo {
+  align-items: center;
+  text-align: center;
+  width: 900px;
+  background-color: #576b88;
+  margin-left: 10px;
+  height: 318px;
+  border-radius: 20px;
+}
